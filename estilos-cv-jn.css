@@ -1,0 +1,851 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Script&family=Ubuntu+Condensed&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    margin: 0;
+    padding: 0;}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* MENU */
+.contenedor-header{
+    background-color:rgb(56, 17, 28) ;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+
+}
+
+.contenedor-header header .logo a{
+    font-family: 'League Script', cursive;
+    font-size: 36px;
+    color: rgb(238, 200, 211);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: rgb(133, 64, 85);
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover{
+    background-color: rgb(133, 64, 85);
+    color: rgb(238, 200, 211);
+    border-radius: 10%;
+}
+
+.nav-responsive{
+    background-color: rgb(133, 64, 85);
+    color: rgb(238, 200, 211);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* SECCION INICIO*/
+.inicio{
+    background-color: rgb(133, 64, 85);
+    background-size: cover;
+    height: 100vh;
+    color: rgb(133, 64, 85);
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: rgb(56, 17, 28);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 3px solid rgb(238, 200, 211);;
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+}
+
+img{
+    height: 200px; 
+    width: 200px;
+}
+
+.inicio .contenido-banner h1{
+margin-top: 30px;
+font-size: 30px;
+font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.inicio .contenido-banner h2{
+    font-size: 25px;
+    font-weight: normal;
+    
+}
+
+.inicio .contenido-banner .redes a{
+ color: rgb(133, 64, 85);
+ /*display: inline-block;
+ text-decoration: none;
+ border: 1px solid rgb(238, 200, 211);
+ border-radius: 100%;
+ line-height: 42px;**/
+ width: 42px;
+ height: 42px;
+ margin: 20px 5px;
+ font-size: 15px;
+ transition: 0.3s;
+}
+
+.inicio .contenido-banner .redes a:hover{
+    background-color: rgb(133, 64, 85);
+    color: rgb(238, 200, 211);
+    border-radius: 10%
+}
+
+/* DATOS PERDONALES*/
+
+.Datos{
+    background-color: rgb(238, 200, 211);
+    color: rgb(133, 64, 85);
+    padding: 80px 20px;
+
+}
+
+.Datos .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.Datos h2{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.Datos .contenido-seccion p{
+    font-size: 20px; 
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.Datos .contenido-seccion p span{
+    color: rgb(56, 17, 28);
+    font-weight: bold;
+}
+
+.Datos .fila{
+    display: flex;
+}
+
+.Datos .fila .col{
+    width: 50%;
+}
+
+.Datos .fila .col h3{
+    font-size: 20px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    margin-bottom: 25px;
+}
+
+.Datos .fila .col ul{
+    list-style: none;
+}
+
+.Datos .fila .col ul li{
+    margin: 3px 0;
+}
+
+.Datos .fila .col ul li strong{
+    display: inline-block;
+    color:rgb(56, 17, 28);
+    /*width: 130px;*/
+
+}
+
+.Datos .fila .col ul li span{
+    background-color: rgb(56, 17, 28);
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.Datos .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Datos .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 80px;
+    background-color: rgb(133, 64, 85);
+    color: rgb(238, 200, 211);
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.Datos .fila .col .contenedor-intereses .interes:hover{
+    background-color: rgb(56, 17, 28);
+    color: rgb(133, 64, 85);
+    
+}
+
+.Datos .fila .col .contenedor-intereses .interes i{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.Datos button{
+    cursor: pointer;
+    background-color: rgb(133, 64, 85);
+    border-radius: 10px;
+    width: fit-content ;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(238, 200, 211);
+    position: relative;
+    z-index: 10;
+    
+}
+
+.Datos button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(56, 17, 28);
+    z-index: -1;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.Datos button:hover .overlay{
+    width: 100%;
+}
+
+/* SECCION CURRICULUM*/
+
+.estudios{
+    background-color: rgb(56, 17, 28);
+    color: rgb(238, 200, 211);
+    padding: 60px 20px;
+
+}
+
+.estudios .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.estudios h2{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.estudios .fila{
+    display: flex;
+    justify-content: space-between;
+}
+
+.estudios .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.estudios .fila .col h3{
+    font-size: 20px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    margin-bottom: 25px;
+}
+
+.estudios .fila .izquierda{
+    border-right: 2px solid rgb(139, 105, 115);
+}
+
+.estudios .fila .derecha{
+    border-left: 2px solid rgb(139, 105, 115);
+}
+
+.estudios .fila .item{
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: rgb(133, 64, 85);
+    position: relative;
+}
+
+.estudios .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.estudios .fila .item .casa{
+    color: rgb(56, 17, 28);
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.estudios .fila .item .fecha{
+    display: block;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.estudios .fila .item p{
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.estudios .fila .izq{
+    border-right: 2px solid rgb(139, 105, 115);
+    margin-right: 20px;
+}
+.estudios .fila .der{
+    border-left: 2px solid rgb(139, 105, 115);
+    margin-left: 20px;
+}
+
+.estudios .fila .item .conectori{
+    height: 2px;
+    background-color: rgb(139, 105, 115);
+    width: 42px;
+    position: absolute;
+    top: 50%;
+    right: -45px;
+    z-index: 5;
+}
+
+.estudios .fila .item .conectord{
+    height: 2px;
+    background-color: rgb(139, 105, 115);
+    width: 42px;
+    position: absolute;
+    top: 50%;
+    left: -45px;
+    z-index: 5;
+}
+
+
+/* SECCION PORTFOLIO*/
+
+.portfolio{
+    background-color: rgb(133, 64, 85);
+    color: rgb(56, 17, 28)
+    padding: 20px 20px;
+
+}
+
+.portfolio .contenido-seccion{
+    max-width: 1100px;
+    height: 100%;
+    margin: auto;
+}
+
+.portfolio h2{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.portfolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio .galeria .proyecto{
+    position: relative;
+    max-width: 350px;
+    height: fit-content;
+    margin: 10px 50px 50px 50px;
+    cursor: pointer;
+}
+
+.portfolio .galeria .proyecto img{
+    width: 100%;
+    display: block;
+
+}
+
+.portfolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(238, 200, 211);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 2px;
+    opacity: 0;
+}
+
+.portfolio .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.portfolio .galeria .proyecto .overlay:hover{
+    opacity: 0.5;
+}
+
+
+/* SECCION HABILIDADES*/
+
+.habilidades{
+    background-color: rgb(238, 200, 211);
+    color: rgb(133, 64, 85);
+    padding: 80px 20px;
+
+}
+
+.habilidades .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.habilidades h2{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.habilidades .fila{
+    display: flex;
+}
+
+.habilidades .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.habilidades .fila .col h3{
+    font-size: 20px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    margin-bottom: 25px;
+}
+
+.habilidades .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: ;
+}
+
+.habilidades .skill .barra-skill{
+    height: 20px;
+    width: 80%;
+    background-color: rgb(56, 17, 28);
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    color: rgb(56, 17, 28);
+    
+}
+
+.habilidades .skill .progreso{
+    background-color: rgb(139, 105, 115);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    border-radius: 50px;
+}
+.habilidades .skill .progreso span{
+    margin-left: 10px;
+}
+
+.habilidades .skill .span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.habilidades .skill .Office{
+    width: 0%;
+    animation: 2s Office forwards;
+}
+@keyframes Office {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.habilidades .skill .Office{
+    width: 0%;
+    animation: 2s Office forwards;
+}
+@keyframes Office {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.habilidades .skill .CorelDraw{
+    width: 0%;
+    animation: 2s CorelDraw forwards;
+}
+@keyframes CorelDraw {
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
+.habilidades .skill .Photoshop{
+    width: 0%;
+    animation: 2s Photoshop forwards;
+}
+@keyframes Photoshop {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+.habilidades .skill .Ingles{
+    width: 0%;
+    animation: 2s Ingles forwards;
+}
+@keyframes Ingles {
+    0%{width: 0%;}
+    100%{width: 25%;}
+}
+
+.habilidades .skill .Italiano{
+    width: 0%;
+    animation: 2s Italiano forwards;
+}
+@keyframes Italiano {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.habilidades .skill .Liderazgo{
+    width: 0%;
+    animation: 2s Liderazgo forwards;
+}
+@keyframes Liderazgo {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.habilidades .skill .Equipo{
+    width: 0%;
+    animation: 2s Equipo forwards;
+}
+@keyframes Equipo {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.habilidades .skill .Comunicación{
+    width: 0%;
+    animation: 2s Comunicación forwards;
+}
+@keyframes Comunicación {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.habilidades .skill .Comunicación{
+    width: 0%;
+    animation: 2s Comunicación forwards;
+}
+@keyframes Comunicación {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.habilidades .skill .Cumplimiento{
+    width: 0%;
+    animation: 2s Cumplimiento forwards;
+}
+@keyframes Cumplimiento {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.habilidades .skill .Prolijidad{
+    width: 0%;
+    animation: 2s Prolijidad forwards;
+}
+@keyframes Prolijidad {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+/* SECCION CONTACTO*/
+
+.contacto{
+    background-image: url(imagenes\fondo.jpg);
+    background-color: rgb(56, 17, 28);
+    color: rgb(238, 200, 211);
+    padding: 50px 0;
+}
+
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.contacto .fila{
+    display: flex;
+
+}
+
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 20px;
+    background-color:rgb(238, 200, 211);;
+    color: rgb(133, 64, 85);
+    font-size: 30 px;
+    border: 3px solid rgb(133, 64, 85);
+}
+
+.contacto button{
+    cursor: pointer;
+    background-color: rgb(133, 64, 85);
+    border: 2px solid rgb(133, 64, 85);
+    border-radius: 10px;
+    width: fit-content ;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(238, 200, 211);
+    position: relative;
+    z-index: 10;
+    
+}
+
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(56, 17, 28);
+    z-index: -1;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.contacto button:hover .overlay{
+    width: 100%;
+}
+
+.contacto .col img{
+    width: 100%;
+    height: 60%;
+}
+
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: rgb(56, 17, 28);
+    padding: 10px;
+    max-width: 300px;
+    border: 3px solid rgb(133, 64, 85);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+
+.contacto .col .info ul li{
+margin-bottom: 20px;
+
+}
+
+.contacto .col .info ul li i{
+color: rgb(133, 64, 85);
+display: inline-block;
+margin-right: 20px;
+}    
+
+/* SECCION FOOTER*/
+
+footer{
+    background-color: rgb(133, 64, 85);
+    color:rgb(56, 17, 28);
+    padding: 30px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;   
+}
+
+footer .redes{
+    margin-bottom: 10px;
+}
+
+footer .redes a{
+    text-align: none;
+    font-size: 25px;
+    color: rgb(56, 17, 28);
+    margin: 15px 15px;
+    padding: 5px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+footer .redes a:hover{
+    background-color: rgb(56, 17, 28);
+    color: rgb(238, 200, 211);
+    border-radius: 10%
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(238, 200, 211);
+    color: rgb(133, 64, 85);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+/*SECCION RESPONSIVE*/
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+
+    .nav-responsive{
+        display: block;
+    }
+
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: rgb(238, 200, 211);
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important; 
+    }
+
+    nav.responsive ul li{
+        border-bottom: 1px solid rgb(133, 64, 85);
+        padding: 20px 0;
+    }
+    
+}
+
+@media screen and (max-width:700px){
+    .datos .fila{
+        display: block;
+    }
+
+    .Datos .fila .col{
+        width: fit-content;
+    }
+    .estudios .fila{
+        display: block; 
+    }
+
+    .estudios .fila .col{
+        width: 90%;
+    }
+
+    .estudios .fila .derecha{
+        margin-left: 20px;
+    }  
+    
+    .portfolio .galeria{
+        display: flex;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .habilidades .fila{
+        display: block;
+    }
+    .habilidades .fila .col{
+        width: 100%;
+    }
+    .habilidades .fila .col .barra-skill{
+        width: 100%;
+    }
+
+
+    
+    .contacto .fila{
+        display: block; 
+    }
+
+    .contacto .fila .col{
+        width: 100%;
+    }
+
+}
+    
+   
+
+
